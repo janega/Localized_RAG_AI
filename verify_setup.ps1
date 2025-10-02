@@ -7,13 +7,13 @@ param(
 function Write-Status {
     param($Message, $Success)
     if ($Success) {
-        Write-Host "✅ $Message" -ForegroundColor Green
+        Write-Host "[OK] $Message" -ForegroundColor Green
     } else {
-        Write-Host "❌ $Message" -ForegroundColor Red
+        Write-Host "[FAIL] $Message" -ForegroundColor Red
     }
 }
 
-Write-Host "`n🔍 Checking RAG_AI dependencies...`n" -ForegroundColor Cyan
+Write-Host "`n[Checking RAG_AI dependencies...]`n" -ForegroundColor Cyan
 
 # Check Python environment
 try {
@@ -73,7 +73,7 @@ if (Test-Path ".env") {
 }
 
 # Try Python imports
-Write-Host "`n🐍 Checking Python dependencies...`n" -ForegroundColor Cyan
+Write-Host "`n[Checking Python dependencies...]`n" -ForegroundColor Cyan
 
 $modules = @(
     "redis",
@@ -82,19 +82,21 @@ $modules = @(
     "PyPDF2",
     "pdf2image",
     "pytesseract",
-    "python-dotenv"
+    "dotenv"
 )
 
 foreach ($module in $modules) {
-    python -c "import $module" 2>$null
-    if ($?) {
+    $cmd = "import importlib; importlib.import_module('$module')"
+    python -c $cmd 2>$null
+    if ($LASTEXITCODE -eq 0) {
         Write-Status "Module $module installed" $true
     } else {
         Write-Status "Module $module missing. Run: pip install -r requirements.txt" $false
     }
 }
 
-Write-Host "`n💡 Next steps:" -ForegroundColor Yellow
-Write-Host "1. Run example: python main.py --allow-ocr"
-Write-Host "2. Load a sample document from data/"
-Write-Host "3. Try querying with option 3"
+Write-Host ''
+Write-Host 'Next steps:' -ForegroundColor Yellow
+Write-Host '1. Run example: python main.py --allow-ocr'
+Write-Host '2. Load a sample document from data/'
+Write-Host '3. Try querying with option 3'
