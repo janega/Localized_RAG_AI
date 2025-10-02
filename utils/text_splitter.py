@@ -61,12 +61,25 @@ class TextSplitter:
 
     def _clean_text(self, text: str) -> str:
         """Clean text by normalizing whitespace and fixing common OCR issues."""
-        # Replace multiple spaces with single space
-        text = re.sub(r'\s+', ' ', text)
-        # Fix broken sentences (no space after period)
+        # Normalize line endings first
+        text = text.replace('\r\n', '\n').replace('\r', '\n')
+
+        # Collapse 3+ newlines into exactly two (preserve paragraph separators)
+        text = re.sub(r'\n{3,}', '\n\n', text)
+
+        # Turn single newlines (line-wraps) into spaces but keep double-newline paragraph separators
+        # (?<!\n)\n(?!\n) matches a single newline not preceded or followed by another newline
+        text = re.sub(r'(?<!\n)\n(?!\n)', ' ', text)
+
+        # Replace multiple spaces/tabs with a single space
+        text = re.sub(r'[ \t]+', ' ', text)
+
+        # Fix broken sentences where a period is immediately followed by a capital letter
         text = re.sub(r'\.(?=[A-Z])', '. ', text)
-        # Normalize newlines
+
+        # Normalize any remaining runs of 2+ newlines to exactly two
         text = re.sub(r'\n{2,}', '\n\n', text)
+
         return text.strip()
 
     def _join_chunk(self, chunk_segments: List[str]) -> str:
