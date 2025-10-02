@@ -1,4 +1,4 @@
-# PowerShell script to verify RAG_AI setup
+# PowerShell script to verify Localized_RAG_AI setup
 param(
     [string]$PopplerPath = "C:\Program Files\poppler\Library\bin",
     [string]$TesseractPath = "C:\Program Files\Tesseract-OCR"
@@ -13,7 +13,7 @@ function Write-Status {
     }
 }
 
-Write-Host "`n[Checking RAG_AI dependencies...]`n" -ForegroundColor Cyan
+Write-Host "`n[Checking Localized_RAG_AI dependencies...]`n" -ForegroundColor Cyan
 
 # Check Python environment
 try {

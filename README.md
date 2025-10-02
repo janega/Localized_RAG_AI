@@ -1,6 +1,6 @@
-# Localized  RAG_AI Setup Guide
+# Localized  Localized_RAG_AI Setup Guide
 
-This guide walks through setting up all components of the RAG_AI system from scratch, including Redis, Ollama, and OCR dependencies.
+This guide walks through setting up all components of the Localized_RAG_AI system from scratch, including Redis, Ollama, and OCR dependencies.
 
 ## Quick Start with Docker Compose
 
@@ -104,7 +104,7 @@ $env:Path += ";C:\Program Files\Tesseract-OCR"
 ```powershell
 # Clone repository (if using version control)
 git clone <repository-url>
-cd RAG_AI
+cd Localized_RAG_AI
 
 # Create virtual environment
 python -m venv .venv

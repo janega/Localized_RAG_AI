@@ -9,7 +9,7 @@ print_status() {
     fi
 }
 
-echo -e "\n🔍 Checking RAG_AI dependencies...\n"
+echo -e "\n🔍 Checking Localized_RAG_AI dependencies...\n"
 
 # Check Python environment
 if [ -f ".venv/bin/activate" ]; then

@@ -160,8 +160,8 @@ if __name__ == "__main__":
         print("\nEnter file paths to load. You can enter multiple paths separated by commas,")
         print("or enter one path per line and type 'done' when finished.")
         print("\nExamples (shown only when you choose option 2):")
-        print(r"  Single:  d:\My Coding Projects\Python\RAG_AI\data\training_splits.json")
-        print(r"  Multiple: d:\My Coding Projects\Python\RAG_AI\data\training_splits.json, d:\My Coding Projects\Python\RAG_AI\data\other_doc.pdf")
+        print(r"  Single:  d:\My Coding Projects\Python\Localized_RAG_AI\data\training_splits.json")
+        print(r"  Multiple: d:\My Coding Projects\Python\Localized_RAG_AI\data\training_splits.json, d:\My Coding Projects\Python\Localized_RAG_AI\data\other_doc.pdf")
         while True:
             inp = input("\nPath (or 'done' to finish): ").strip()
             if inp.lower() == "done":

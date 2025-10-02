@@ -1,6 +1,6 @@
-## Copilot / AI Agent Instructions — RAG_AI
+## Copilot / AI Agent Instructions — Localized_RAG_AI
 
-Purpose: Guide AI agents through the RAG_AI codebase architecture, data flows, and project-specific patterns.
+Purpose: Guide AI agents through the Localized_RAG_AI codebase architecture, data flows, and project-specific patterns.
 
 Key files and flows
 - `main.py` — CLI entry point for document ingestion and queries; manages embedding pipeline
