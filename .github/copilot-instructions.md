@@ -32,8 +32,4 @@ Project patterns
 - Windows OCR needs Poppler path (see `.env.example`)
 - Interactive CLI stores loaded docs for scoped queries
 
-Gotchas (discovered)
-- `text_splitter.py::_clean_text()` collapses newlines before normalizing paragraphs
-- OCR deps (`pdf2image`, `pytesseract`) are optional—code handles missing gracefully
-
 
