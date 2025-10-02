@@ -1,0 +1,78 @@
+{
+  "splits": [
+    {
+      "id": "bro_split_overview",
+      "title": "Bro Split (Overview)",
+      "type": "split",
+      "text": "Bro split: 5 training days per week. Typical layout: Chest, Back, Shoulders, Legs, Arms. Focus each session on one major muscle group with accessory movements and moderate-to-high volume."
+    },
+    {
+      "id": "bro_chest_day",
+      "title": "Bro Split - Day 1: Chest",
+      "type": "training_day",
+      "day": 1,
+      "text": "Chest day: flat barbell bench press 4x6-8, incline dumbbell press 3x8-12, decline bench 3x8-12, cable fly 3x12-15, pushups 2xAMRAP. Emphasize progressive overload and chest-mind connection."
+    },
+    {
+      "id": "bro_back_day",
+      "title": "Bro Split - Day 2: Back",
+      "type": "training_day",
+      "day": 2,
+      "text": "Back day: deadlift 3x3-5 or rack pulls 3x4-6, bent-over rows 4x6-10, lat pulldowns 3x8-12, seated cable rows 3x8-12, face pulls 3x15. Include vertical and horizontal pulling."
+    },
+    {
+      "id": "bro_shoulders_day",
+      "title": "Bro Split - Day 3: Shoulders",
+      "type": "training_day",
+      "day": 3,
+      "text": "Shoulder day: overhead press 4x5-8, lateral raises 4x12-15, front raises 3x10-12, rear delt fly 3x12-15, shrugs 3x8-12."
+    },
+    {
+      "id": "bro_legs_day",
+      "title": "Bro Split - Day 4: Legs",
+      "type": "training_day",
+      "day": 4,
+      "text": "Leg day: squat 4x5-8, Romanian deadlift 3x6-10, leg press 3x10-15, lunges 3x8-12 per leg, hamstring curls 3x10-15, calf raises 4x12-20."
+    },
+    {
+      "id": "bro_arms_day",
+      "title": "Bro Split - Day 5: Arms",
+      "type": "training_day",
+      "day": 5,
+      "text": "Arms day: close-grip bench press 3x6-8, barbell curls 3x6-10, skull crushers 3x8-12, incline dumbbell curls 3x8-12, cable pushdowns 3x12-15. High volume for biceps and triceps."
+    },
+    {
+      "id": "push_pull_legs_overview",
+      "title": "Push/Pull/Legs Split (Overview)",
+      "type": "split",
+      "text": "Push/Pull/Legs (PPL): 3-day rotation often done 6 days/week (P,P,L,P,P,L) or 3 days/week. Push focuses on chest/shoulders/triceps; Pull on back/biceps; Legs on quads/hamstrings/glutes."
+    },
+    {
+      "id": "ppl_push_day",
+      "title": "PPL - Push Day",
+      "type": "training_day",
+      "day": "push",
+      "text": "Push day: bench press 4x5-8, overhead press 4x6-8, incline dumbbell press 3x8-12, lateral raises 4x12-15, triceps dips 3x8-12, cable pushdowns 3x12-15."
+    },
+    {
+      "id": "ppl_pull_day",
+      "title": "PPL - Pull Day",
+      "type": "training_day",
+      "day": "pull",
+      "text": "Pull day: deadlift or heavy row 3x3-6, pull-ups 4xAMRAP or lat pulldowns 4x8-12, seated cable rows 3x8-12, hammer curls 3x10-12, face pulls 3x15."
+    },
+    {
+      "id": "ppl_legs_day",
+      "title": "PPL - Legs Day",
+      "type": "training_day",
+      "day": "legs",
+      "text": "Legs day: squat 4x5-8, leg press 3x10-15, Romanian deadlift 3x6-10, walking lunges 3x10 per leg, leg curls 3x10-15, standing calf raises 4x12-20."
+    },
+    {
+      "id": "notes_recovery_and_progression",
+      "title": "General Notes - Recovery & Progression",
+      "type": "notes",
+      "text": "Prioritize sleep, nutrition, and progressive overload. Adjust volume and frequency based on recovery. Deload every 4-8 weeks as needed. Use RPE 7-9 for most working sets."
+    }
+  ]
+}
