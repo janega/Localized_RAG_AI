@@ -1,4 +1,4 @@
-# Localized  Localized_RAG_AI Setup Guide
+# Localized_RAG_AI Setup Guide
 
 This guide walks through setting up all components of the Localized_RAG_AI system from scratch, including Redis, Ollama, and OCR dependencies.
 
